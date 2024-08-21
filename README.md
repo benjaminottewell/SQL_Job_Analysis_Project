@@ -57,6 +57,10 @@ Breakdown of highest earning data analyst positions in 2023:
 - The top 20 job listings show salaries ranging from $100,500 to $177,283, which is actually a narrower range than I would have expected.
 - A significant majority of the higher-paying positions are in the AI and cybersecurity sectors, with companies like DeepMind and Darktrace leading the list. However, other less tech-focused companies, such as Ocorian, a capital markets firm, and Experian, are also offering top dollar for their data-related roles.
 
+![alt text](Location_Top_Paying_Job-1.png)
+Bar graph visualing the average salary for the top paying data analyst positions in the UK by city
+Bar graph illustrating the average salary for the highest-paying data analyst positions in the UK, broken down by city;
+**Graph was created using Tableau**
 
 
 # WHAT I LEARNED
