@@ -87,28 +87,53 @@ WITH top_paying_jobs_uk AS (
 )
 SELECT 
     top_paying_jobs_uk.*,
-    STRING_AGG(skills_dim.skills, ', ') AS skills 
+    skills
 FROM top_paying_jobs_uk
 INNER JOIN skills_job_dim ON top_paying_jobs_uk.job_id = skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
-GROUP BY 
-    top_paying_jobs_uk.job_id,
-    top_paying_jobs_uk.job_title,
-    top_paying_jobs_uk.job_title_short,
-    top_paying_jobs_uk.job_location,
-    top_paying_jobs_uk.salary_year_avg,
-    top_paying_jobs_uk.company_name
 ORDER BY
     salary_year_avg DESC;
-
 ```
 Breakdown of Most In-Demand Skills for the Top 10 Highest-Paying Jobs:
 - **SQL** tops the list, with a count of 6
 - **Python** follows closely with a count of 5
 - **Excel** ranks third with a count of 3
-![alt text](<Query 2 Visual.png>)
+![Top_Paying_Jobs_With_Skills](<Query 2 Visual.png>)
 Bar graph visualing the count of skills for the top paying data analyst positions;
 **Graph was created using Tableau**
+### 3. In Demand Skills for Data Analysts 
+This query highlighted the skills most commonly sought in UK job postings, guiding attention to high-demand areas.
+```SQL
+SELECT 
+skills,
+COUNT(skills_job_dim.job_id) AS demand_count
+FROM 
+    job_postings_fact
+INNER JOIN 
+    skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN
+    skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE
+        (job_title_short = 'Data Analyst' OR job_title_short = 'Business Analyst') AND
+        (job_location LIKE '%, UK%' OR job_location LIKE '%, United Kingdom%')
+GROUP BY 
+    skills
+ORDER BY
+    demand_count DESC
+LIMIT 5;
+```
+Breakdown of most in demand skills:
+- **Excel** and **SQL** lead the list, underscoring their essential role in the data analytics field.
+- **Tableau** and **Power BI** rank among the top 5 most demanded skills, highlighting the growing importance of data storytelling.
+
+| Skills   | Demand |
+|----------|--------------|
+| sql      | 3389         |
+| excel    | 3318         |
+| power bi | 2221         |
+| python   | 1523         |
+| tableau  | 1168         |
+
 # WHAT I LEARNED
 
 # CONCLUSIONS
