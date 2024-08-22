@@ -102,6 +102,13 @@ ORDER BY
     salary_year_avg DESC;
 
 ```
+Breakdown of Most In-Demand Skills for the Top 10 Highest-Paying Jobs:
+- **SQL** tops the list, with a count of 6
+- **Python** follows closely with a count of 5
+- **Excel** ranks third with a count of 3
+![alt text](<Query 2 Visual.png>)
+Bar graph visualing the count of skills for the top paying data analyst positions;
+**Graph was created using Tableau**
 # WHAT I LEARNED
 
 # CONCLUSIONS
