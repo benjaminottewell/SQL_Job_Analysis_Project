@@ -21,7 +21,7 @@ WITH top_paying_jobs_uk AS (
 )
 SELECT 
     top_paying_jobs_uk.*,
-    STRING_AGG(skills_dim.skills, ', ') AS skills -- Use GROUP_CONCAT for MySQL
+    STRING_AGG(skills_dim.skills, ', ') AS skills 
 FROM top_paying_jobs_uk
 INNER JOIN skills_job_dim ON top_paying_jobs_uk.job_id = skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
