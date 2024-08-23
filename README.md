@@ -5,7 +5,7 @@ SQL queries used -> [uk_data_analyst_jobs_project_sql](/uk_data_analyst_jobs_pro
 # BACKGROUND
 This project originated from my curiosity about the data analyst job market in countries outside of the United States. As a dual citizen of both the United States and the United Kingdom, I was particularly interested in exploring the UK market.
 
-Data comes from [LINK TO CSV FILES](https://drive.google.com/drive/folders/1moeWYoUtUklJO6NJdWo9OV8zWjRn0rjN). The data comprises of around 1 million data related 2023 job postings from around the world, and were collected from various job posting sites (Glassdoor, LinkedIn, etc.)
+Data comes from [LINK TO CSV FILES](https://drive.google.com/drive/folders/1moeWYoUtUklJO6NJdWo9OV8zWjRn0rjN). The data comprises of around 800 thousand data related 2023 job postings from around the world, and were collected from various job posting sites (Glassdoor, LinkedIn, etc.)
 
 ### **Questions I aimed to explore:**
 - What are the highest-paying data analyst jobs?
