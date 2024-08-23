@@ -123,11 +123,11 @@ ORDER BY
 LIMIT 5;
 ```
 Breakdown of most in demand skills:
-- **Excel** and **SQL** lead the list, underscoring their essential role in the data analytics field.
+- **SQL** and **Excel** top the list with counts of 3,389 and 3,318 respectively across 8,090 job postings, highlighting their crucial role in the data analytics field.
 - **Tableau** and **Power BI** rank among the top 5 most demanded skills, highlighting the growing importance of data storytelling.
 
 | Skills   | Demand |
-|----------|--------------|
+|----------|-------------:|
 | sql      | 3389         |
 | excel    | 3318         |
 | power bi | 2221         |
@@ -160,8 +160,8 @@ Below is an overview of the highest-paying skills for Data Analysts:
 - **Python**, **SQL**, and **R** are also top earners, demonstrating that traditional data analyst programming languages remain highly valued in the job market.
 - **Looker** ranks as the second highest paying skill on average, further emphasizing the value of cloud-related expertise.
 
-| Skills       | Average Salary (U.S. Dollars) |
-|--------------|------------|
+| Skills       | Average Salary (USD) |
+|--------------|-----------:|
 | azure        | 115826     |
 | looker       | 97534      |
 | python       | 96619      |
@@ -199,8 +199,8 @@ ORDER BY
     avg_salary DESC,
     demand_count DESC
 ```
-| Skills  | Demand | Average Salary (U.S. Dollars) |
-|---------|--------------|------------|
+| Skills  | Demand | Average Salary (USD) |
+|---------|-------------:|------------:|
 | python  | 16           | 96619      |
 | sql     | 25           | 93985      |
 | r       | 7            | 90473      |
