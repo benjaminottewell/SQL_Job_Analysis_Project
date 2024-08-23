@@ -208,7 +208,7 @@ ORDER BY
 | excel   | 19           | 82461      |
 | go      | 7            | 74125      |
 
-Table showcasing the most optimal skills for data analysts, ranked by average salary and demand count
+Table showcasing the most optimal skills for data analysts, ranked by average salary and demand count. (Demand count for the skills is different to query 3 due to the "salary_year_avg IS NOT NULL" line)
 
 Breakdown of the most optimal skills for Data Analysts positons in the UK during 2023:
 - **Optimal Programming Languages:** It’s no surprise that Python, SQL, and R are the top three most valuable skills to learn. These fundamental programming languages command an average salary in the 90-thousand-dollar range, highlighting their continued high value despite the strong demand for these skills.
