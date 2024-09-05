@@ -13,7 +13,3 @@ WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 COPY skills_job_dim
 FROM 'C:\Users\benja\OneDrive\SQL_Job_Analysis_Project\csv_files\skills_job_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
-
-SELECT *
-FROM skills_dim
-LIMIT 100;
